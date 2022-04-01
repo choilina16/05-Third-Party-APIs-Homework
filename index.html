@@ -6,24 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <script type = "text/JavaScript" src = "https://MomentJS.com/downloads/moment.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"
+    ></script>
 
+    <!-- linking bootstrap -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
+    <!--  -->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
+    <!-- linking google fonts -->
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <script src="./assets/js/style.css"></script>
+   <!-- linking css style sheet -->
+   <link rel="stylesheet" href="./assets/css/style.css" />
+
     <title>Work Day Scheduler</title>
   </head>
 
@@ -34,12 +41,84 @@
       <p id="currentDay" class="lead"></p>
       <p id="currentTime" class="lead"></p>
     </header>
+    
+    <!-- Timeblocks go here -->
     <div class="container">
-      <!-- Timeblocks go here -->
+      <div class="row" id="9">
+          <div class="col-2 hour">9 AM</div>
+          <textarea class="col-9 task" id="9am-task"></textarea>
+          <button class="col-1 save-button">💾</button>
+      </div> 
+    </div>
+
+    <div class="container">
+      <div class="row" id="10">
+          <div class="col-2 hour">10 AM</div>
+          <textarea class="col-9 task"></textarea>
+          <button class="col-1 save-button">💾</button>
+      </div> 
+    </div>
+
+    <div class="container">
+      <div class="row" id="11">
+          <div class="col-2 hour">11 AM</div>
+          <textarea class="col-9 task"></textarea>
+          <button class="col-1 save-button">💾</button>
+      </div> 
+    </div>
+
+    <div class="container">
+      <div class="row" id="12">
+          <div class="col-2 hour">12 PM</div>
+          <textarea class="col-9 task"></textarea>
+          <button class="col-1 save-button">💾</button>
+      </div> 
+    </div>
+
+    <div class="container">
+      <div class="row" id="13">
+          <div class="col-2 hour">1 PM</div>
+          <textarea class="col-9 task"></textarea>
+          <button class="col-1 save-button">💾</button>
+      </div> 
+    </div>
+
+    <div class="container">
+      <div class="row" id="14">
+          <div class="col-2 hour">2 PM</div>
+          <textarea class="col-9 task"></textarea>
+          <button class="col-1 save-button">💾</button>
+      </div> 
+    </div>
+
+    <div class="container">
+      <div class="row" id="15">
+          <div class="col-2 hour">3 PM</div>
+          <textarea class="col-9 task"></textarea>
+          <button class="col-1 save-button">💾</button>
+      </div> 
+    </div>
+
+    <div class="container">
+      <div class="row" id="16">
+          <div class="col-2 hour">4 PM</div>
+          <textarea class="col-9 task"></textarea>
+          <button class="col-1 save-button">💾</button>
+      </div> 
+    </div>
+
+    <div class="container">
+      <div class="row" id="17">
+          <div class="col-2 hour">5 PM</div>
+          <textarea class="col-9 task"></textarea>
+          <button class="col-1 save-button">💾</button>
+      </div> 
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <!-- link javascript file -->
+    <script src="./assets/js/script.js"></script>
 
   </body>
 </html>
