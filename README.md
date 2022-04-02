@@ -23,6 +23,7 @@ Criteria need:
 Showing appreciation to our study group! 
 * Anthony Chang
 * James Edwards
+* Sarah Gilbreath
 * Eric Hurst
 * Brian Samuels
 * Seamona Stewart
