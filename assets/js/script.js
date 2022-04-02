@@ -17,13 +17,15 @@ $('#15 .task').val(localStorage.getItem('15'));
 $('#16 .task').val(localStorage.getItem('16'));
 $('#17 .task').val(localStorage.getItem('17'));
 
-
 // function to add task to local storage based on the time
 var saveButtonEl = $('.save-button');
 
 saveButtonEl.on('click', function(event) {
     event.preventDefault();
+    // parent element for submit button and then selecting attr id
+    // var time = $(this).parent().attr('id');
     var time = $(this).parent().attr('id');
+    // sibling element for submit button and the selecting value for class task
     var task = $(this).siblings('.task').val();
     console.log(time);
     console.log(task);
@@ -31,25 +33,22 @@ saveButtonEl.on('click', function(event) {
 })
 
 // function to color the timeblocks to show future, present, or past
-function colorTimeBlocks (event) {
-    event.preventDefault();
+$('.task').each(function () {
 
     // making the current time into 24 hr format so that it's easier to compare
-    var currentTime24 = moment().format('HH');
+    var currentTime24 = today.format('HH');
+    console.log(currentTime24);
 
-    // grabbing all the IDs into an array 
-    // is there an easier way to do this? I tried to do what I did for the function above...but I wouldn't do it TT_TT
-    var timeBlock = document.getElementById('#9, #10, #11, #12, #13, #14, #15, #16, #17');
-    console.log(timeblock);
+    var hourTime = parseInt($(this).parent().attr('id'));
+    console.log(hourTime);
 
-
-    if (currentTime24 == timeBlock) {
+    if (hourTime == currentTime24) {
         $(this).addClass('present');
-    } else if (currentTime24 < timeBlock) {
-        // $(this).removeClass('present');
+    } else if (hourTime > currentTime24) {
         $(this).addClass('future');
-    } else if (currentTime24 > timeBlock) {
-        // $(this).removeClass('future');
+    } else {
         $(this).addClass('past');
     }
-}
+});
+
+
