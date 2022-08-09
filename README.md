@@ -14,10 +14,10 @@ Criteria need:
 ![05-Third-Party-APIs-Homework-Lina](https://user-images.githubusercontent.com/100983245/161391335-cfa55486-dfa8-4b70-b578-8ec32e26f807.png)
 
 ## Link to Deployed Page
-[Deployed Github Page] (https://choilina16.github.io/05-Third-Party-APIs-Homework/)
+[Deployed Github Page](https://choilina16.github.io/05-Third-Party-APIs-Homework/)
 
 ## Link to Github Repository 
-[Github Repository] (https://github.com/choilina16/05-Third-Party-APIs-Homework)
+[Github Repository](https://github.com/choilina16/05-Third-Party-APIs-Homework)
 
 ## Acknowledgments 
 Showing appreciation to our study group! 
